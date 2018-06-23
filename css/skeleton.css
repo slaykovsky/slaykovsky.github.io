@@ -1,0 +1,97 @@
+html,body {
+        height: 100%;
+        min-height: 100%;
+        font-size: 1.5em;
+        line-height: 1.6;
+        font-family: monospace;
+        color: #fbf1c7;
+        background: #282828;
+}
+
+@keyframes atransition {
+        from {color: #83a598;}
+        to {color: #458588;}
+}
+
+a {
+        color: #83a598;
+        animation: atransition 2s infinite alternate;
+}
+
+a:hover {
+        color: #458588;
+}
+
+.wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+}
+
+.greeting {
+        color: #b8bb26;
+        grid-column: 2;
+        grid-row: 1;
+}
+
+.description {
+        grid-column: 2;
+        grid-row: 2;
+        color: #fe8019;
+}
+
+.links {
+        grid-column: 2;
+        grid-row: 3;
+
+        margin: auto;
+}
+
+.credits {
+        font-size: 0.5em;
+        grid-column: 2;
+        grid-row: 4;
+}
+
+.mail {
+        background-image: url("../images/envelope.png");
+        width: 32px;
+        height: 32px;
+        background-size: 100% auto;
+        display: inline;
+        float: left;
+        margin-top: 3px;
+}
+
+.mail:hover {
+        opacity: 0.8;
+}
+
+.linkedin {
+        background-image: url("../images/linkedin-logo.png");
+        width: 32px;
+        height: 32px;
+        background-size: 100% auto;
+        display: inline;
+        float: left;
+        margin-left: 20px;
+}
+
+.linkedin:hover {
+        opacity: 0.8;
+}
+
+.github {
+        background-image: url("../images/github-sign.png");
+        width: 32px;
+        height: 32px;
+        background-size: 100% auto;
+        display: inline;
+        float: left;
+        margin-left: 20px;
+}
+
+.github:hover {
+        opacity: 0.8;
+}
